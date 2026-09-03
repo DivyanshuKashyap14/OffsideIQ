@@ -29,18 +29,21 @@ nav a {
 }
 main {
     padding: 30px;
+    align-items: center;
 }
 section {
     background-color: #1e293b;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    text-align: center;
 }
 .match-card {
     background-color: #334155;
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
+    text-align: center;
 }
 .match-card:hover {
     background-color: rgb(134, 71, 157);
