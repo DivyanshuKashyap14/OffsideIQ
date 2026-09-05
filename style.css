@@ -1,8 +1,14 @@
+/* =========================
+   GENERAL PAGE STYLING
+========================= */
+
 body {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-    ), url("background.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("background.jpg");
 
     background-size: cover;
     background-position: center;
@@ -12,84 +18,327 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
-h1{
-    color: whitesmoke;
-}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
 nav {
     background-color: rgb(134, 71, 157);
-    padding: 20px;
+
+    padding: 20px 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+nav h1 {
+    margin: 0;
+    color: white;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
+
+    transition: 0.3s;
 }
+
+nav a:hover {
+    color: #00ff55;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
 main {
     padding: 30px;
-    align-items: center;
 }
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
 section {
     background-color: #1e293b;
-    padding: 20px;
-    margin-bottom: 20px;
+
+    padding: 25px;
+    margin-bottom: 25px;
+
     border-radius: 20px;
+
     text-align: center;
 }
-.match-card {
-    background-color: #334155;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-    text-align: center;
-}
-.match-card:hover {
-    background-color: rgb(134, 71, 157);
-}
-.hero {
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.hero h2 {
-    font-size: 60px;
-    margin-bottom: 15px;
-}
-.hero-label {
-    font-size: 14px;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
-.hero button {
-    background-color: rgb(134, 71, 157);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.hero button:hover {
-    background-color: #00ff55;
-}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero {
     min-height: 500px;
 
     background-image:
-    linear-gradient(
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-    ),
-    url("jude.jpg");
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("jude.jpg");
+
     background-size: cover;
     background-position: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
     text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero button {
+    background-color: rgb(134, 71, 157);
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #00ff55;
+
+    color: black;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   FEATURED MATCH
+========================= */
+
+.featured-match {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("rmavsfcb.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+
+    padding: 40px;
+
+    border-radius: 15px;
+}
+
+.team h3 {
+    font-size: 24px;
+}
+
+.score h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.score p {
+    color: #FBBF24;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MATCH CARDS - GENERAL
+========================= */
+
+.match-card {
+    background-color: #334155;
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.match-card:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   MANCHESTER UNITED MATCH
+========================= */
+
+.manchester-match {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("muvstotte.jpg");
+}
+
+
+/* =========================
+   ARSENAL MATCH
+========================= */
+
+.arsenal-match {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("haramvshalal.jpg");
+}
+
+
+/* =========================
+   ASTON VILLA MATCH
+========================= */
+
+.villa-match {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("psgvsvilla.jpg");
+}
+
+
+/* =========================
+   UPCOMING MATCHES
+========================= */
+
+.upcoming-match {
+    background-color: #334155;
+
+    background-image:
+        linear-gradient(
+            rgba(30, 41, 59, 0.9),
+            rgba(30, 41, 59, 0.9)
+        );
+}
+
+
+/* =========================
+   MATCH TEAM INFORMATION
+========================= */
+
+.match-teams {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.match-info {
+    text-align: right;
+}
+
+
+/* =========================
+   LIVE MATCH
+========================= */
+
+.live {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   FOR SMALLER SCREENS
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .featured-match {
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .match-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .match-teams {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .match-info {
+        text-align: center;
+    }
 }
